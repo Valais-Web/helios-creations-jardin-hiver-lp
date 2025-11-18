@@ -8,7 +8,7 @@ const TestimonialsSection = () => {
     {
       location: "Portalban",
       text: "Une superbe pièce à vivre en plus. Très bonne qualité du produit. Un projet très bien mené de la conception à la pose. Merci à vous",
-      image: "/lovable-uploads/06419cd7-7b20-4d68-a484-02f45e6ce599.png",
+      image: "/lovable-uploads/testimonial-portalban.jpg",
     },
     {
       location: "Conthey",
