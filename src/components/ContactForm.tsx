@@ -115,11 +115,11 @@ const ContactForm = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Image section */}
           <div className="relative order-1 lg:order-1">
-            <div className="relative overflow-hidden rounded-lg shadow-lg">
+            <div className="relative overflow-hidden rounded-lg shadow-lg aspect-[4/5]">
               <img
-                src="/lovable-uploads/d8e6f146-04d1-41ba-8294-99b7cffeea8e.png"
-                alt="Pergola moderne avec femme se détendant"
-                className="w-full h-full object-cover"
+                src="/lovable-uploads/contact-form-bg.jpg"
+                alt="Véranda moderne et lumineuse"
+                className="w-full h-full object-cover scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
