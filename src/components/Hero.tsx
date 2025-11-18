@@ -63,8 +63,8 @@ const Hero = () => {
               <div className="order-1 lg:order-2">
                 <div className="relative group">
                   <img
-                    src="/lovable-uploads/9882f6b3-2664-43eb-874a-38a527d25447.png"
-                    alt="Pergola bioclimatique avec famille - Hélios Créations"
+                    src="/lovable-uploads/winter-garden-hero.jpg"
+                    alt="Jardin d'hiver moderne avec vue enneigée - Hélios Créations"
                     className="w-full h-auto rounded-2xl shadow-2xl group-hover:shadow-3xl transition-all duration-300 transform group-hover:scale-[1.02]"
                   />
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-primary/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
