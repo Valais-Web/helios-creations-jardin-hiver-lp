@@ -6,17 +6,12 @@ const VideoSection = () => {
           Découvrez nos réalisations
         </h2>
         
-        <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Hélios Créations | Pergolas"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="absolute inset-0"
-          ></iframe>
+        <div className="relative w-full rounded-lg overflow-hidden shadow-lg group">
+          <img
+            src="/lovable-uploads/header-avalis-desktop.jpg"
+            alt="Véranda moderne avec piscine - Hélios Créations"
+            className="w-full h-auto group-hover:scale-[1.02] transition-transform duration-300"
+          />
         </div>
       </div>
     </section>
