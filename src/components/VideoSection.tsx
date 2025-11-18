@@ -8,7 +8,7 @@ const VideoSection = () => {
         
         <div className="relative w-full rounded-lg overflow-hidden shadow-lg group">
           <img
-            src="/lovable-uploads/header-avalis-desktop-3.jpg"
+            src="/lovable-uploads/header-avalis-desktop.jpg"
             alt="Véranda moderne avec piscine - Hélios Créations"
             className="w-full h-auto group-hover:scale-[1.02] transition-transform duration-300"
           />
