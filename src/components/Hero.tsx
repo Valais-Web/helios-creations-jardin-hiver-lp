@@ -10,7 +10,13 @@ const Hero = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-red-hat text-primary mb-8 leading-tight animate-fade-in">
-                  Profitez de votre jardin toute l'année avec nos pergolas bioclimatiques
+                  Profitez de votre terrasse toute l'année avec nos jardins d'hiver
+
+
+
+
+
+   
                 </h1>
                 
                 <ul className="space-y-4 mb-8">
@@ -22,10 +28,9 @@ const Hero = () => {
                     </li>)}
                 </ul>
 
-                <button 
-                  className="btn-helios-cta mb-8 hover-scale"
-                  onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
-                >
+                <button className="btn-helios-cta mb-8 hover-scale" onClick={() => document.getElementById('contact-form')?.scrollIntoView({
+                behavior: 'smooth'
+              })}>
                   Demander un devis gratuit
                 </button>
 
