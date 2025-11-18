@@ -1,7 +1,7 @@
 import { Check, Star } from "lucide-react";
 const Hero = () => {
   const benefits = [
-    "Profitez d'un jadin d'hiver personnalisé qui correspondra à votre style",
+    "Installation de vérandas et jardins d'hiver personnalisés qui correspent à votre style",
     "Des produits de qualité supérieure avec le souci intégral du détail",
     "Installations professionnelles, durables et de qualité partout en Suisse Romande",
     "Adapté à votre budget et vos besoins",
