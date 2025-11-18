@@ -3,7 +3,7 @@ const TestimonialsSection = () => {
     {
       location: "Fribourg",
       text: "Je recommande cette société de jardin d'hiver. Les travaux sont effectués de manière efficaces et de très grande qualité. Je recommande !",
-      image: "/lovable-uploads/6d2657b8-4d27-4e2f-b9b8-cdf532e50db2.png",
+      image: "/lovable-uploads/testimonial-fribourg.jpg",
     },
     {
       location: "Portalban",
