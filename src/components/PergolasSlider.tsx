@@ -5,15 +5,12 @@ import pergola1 from '/lovable-uploads/ebffc880-3b29-4833-a4e2-7789f51ad359.png'
 import pergola2 from '/lovable-uploads/1aa19414-eff8-44d9-a8a9-46140157e0cb.png';
 import pergola3 from '/lovable-uploads/eee61c12-e6e9-410c-b5e5-6ddb11789e50.png';
 import pergola4 from '/lovable-uploads/d59cdf9c-cdae-48d3-82b8-6c96ba90f380.png';
-
 const PergolasSlider = () => {
   const images = [pergola1, pergola2, pergola3, pergola4];
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const nextSlide = () => {
     setCurrentIndex(prev => (prev + 1) % images.length);
   };
-
   const prevSlide = () => {
     setCurrentIndex(prev => (prev - 1 + images.length) % images.length);
   };
@@ -23,10 +20,8 @@ const PergolasSlider = () => {
     const interval = setInterval(() => {
       nextSlide();
     }, 4000);
-
     return () => clearInterval(interval);
   }, []);
-
   const getVisibleImages = () => {
     const result = [];
     for (let i = 0; i < 3; i++) {
@@ -38,9 +33,7 @@ const PergolasSlider = () => {
     }
     return result;
   };
-
-  return (
-    <section className="section-padding bg-gray-50">
+  return <section className="section-padding bg-gray-50">
       <div className="max-w-7xl mx-auto text-center">
         {/* Header */}
         <div className="mb-12">
@@ -48,8 +41,7 @@ const PergolasSlider = () => {
             Inspirez-vous
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Découvrez nos réalisations récentes. Des pergolas bioclimatiques sur-mesure qui allient 
-            isolation, sécurité et design pour s'adapter parfaitement à votre architecture.
+            Découvrez nos réalisations récentes. Des jardins d'hiver, pergolas et vérandas sur-mesure qui allient isolation, sécurité et design pour s'adapter parfaitement à votre architecture.
           </p>
         </div>
 
@@ -58,44 +50,23 @@ const PergolasSlider = () => {
           {/* Mobile: Single image */}
           <div className="md:hidden flex justify-center">
             <div className="w-full max-w-sm h-48 relative overflow-hidden rounded-2xl shadow-lg">
-              <img 
-                src={images[currentIndex]} 
-                alt={`Pergola réalisation ${currentIndex + 1}`}
-                className="w-full h-full object-cover" 
-              />
+              <img src={images[currentIndex]} alt={`Pergola réalisation ${currentIndex + 1}`} className="w-full h-full object-cover" />
             </div>
           </div>
           
           {/* Desktop: Three images */}
           <div className="hidden md:flex justify-center items-center gap-4 md:gap-6">
-            {getVisibleImages().map((image, i) => (
-              <div 
-                key={`${image.index}-${i}`} 
-                className={`relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 ${
-                  i === 1 ? 'w-80 h-64 md:w-96 md:h-72 scale-105 z-10' : 'w-64 h-48 md:w-80 md:h-60 opacity-80'
-                }`}
-              >
-                <img 
-                  src={image.src} 
-                  alt={`Pergola réalisation ${image.index + 1}`}
-                  className="w-full h-full object-cover" 
-                />
-              </div>
-            ))}
+            {getVisibleImages().map((image, i) => <div key={`${image.index}-${i}`} className={`relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 ${i === 1 ? 'w-80 h-64 md:w-96 md:h-72 scale-105 z-10' : 'w-64 h-48 md:w-80 md:h-60 opacity-80'}`}>
+                <img src={image.src} alt={`Pergola réalisation ${image.index + 1}`} className="w-full h-full object-cover" />
+              </div>)}
           </div>
 
           {/* Navigation Buttons */}
-          <button 
-            onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all duration-200 hover:scale-105"
-          >
+          <button onClick={prevSlide} className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all duration-200 hover:scale-105">
             <ChevronLeft className="w-6 h-6 text-primary" />
           </button>
           
-          <button 
-            onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all duration-200 hover:scale-105"
-          >
+          <button onClick={nextSlide} className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all duration-200 hover:scale-105">
             <ChevronRight className="w-6 h-6 text-primary" />
           </button>
         </div>
@@ -118,10 +89,9 @@ const PergolasSlider = () => {
               </div>
             </div>
             
-            <Button 
-              className="font-semibold w-full"
-              onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
-            >
+            <Button className="font-semibold w-full" onClick={() => document.getElementById('contact-form')?.scrollIntoView({
+            behavior: 'smooth'
+          })}>
               Demander un devis gratuit
             </Button>
           </div>
@@ -142,17 +112,14 @@ const PergolasSlider = () => {
               </div>
             </div>
             
-            <Button 
-              className="font-semibold px-6 whitespace-nowrap"
-              onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
-            >
+            <Button className="font-semibold px-6 whitespace-nowrap" onClick={() => document.getElementById('contact-form')?.scrollIntoView({
+            behavior: 'smooth'
+          })}>
               Demander un devis gratuit
             </Button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PergolasSlider;
