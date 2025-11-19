@@ -10,8 +10,31 @@ import pergola6 from '/lovable-uploads/pergola-slider-6.jpg';
 import pergola7 from '/lovable-uploads/pergola-slider-7.jpg';
 import pergola8 from '/lovable-uploads/pergola-slider-8.jpg';
 import pergola9 from '/lovable-uploads/pergola-slider-9.jpg';
+import pergola11 from '/lovable-uploads/pergola-slider-11.webp';
+import pergola12 from '/lovable-uploads/pergola-slider-12.webp';
+import pergola13 from '/lovable-uploads/pergola-slider-13.webp';
+import pergola14 from '/lovable-uploads/pergola-slider-14.webp';
+import pergola15 from '/lovable-uploads/pergola-slider-15.webp';
+import pergola16 from '/lovable-uploads/pergola-slider-16.webp';
+import pergola17 from '/lovable-uploads/pergola-slider-17.webp';
+import pergola18 from '/lovable-uploads/pergola-slider-18.webp';
+import pergola19 from '/lovable-uploads/pergola-slider-19.webp';
+import pergola20 from '/lovable-uploads/pergola-slider-20.webp';
+
 const PergolasSlider = () => {
-  const images = [pergola1, pergola2, pergola3, pergola4, pergola5, pergola6, pergola7, pergola8, pergola9];
+  // Alternance : 1 ancienne, 1 nouvelle
+  const images = [
+    pergola1, pergola11,
+    pergola2, pergola12,
+    pergola3, pergola13,
+    pergola4, pergola14,
+    pergola5, pergola15,
+    pergola6, pergola16,
+    pergola7, pergola17,
+    pergola8, pergola18,
+    pergola9, pergola19,
+    pergola20
+  ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const nextSlide = () => {
     setCurrentIndex(prev => (prev + 1) % images.length);
