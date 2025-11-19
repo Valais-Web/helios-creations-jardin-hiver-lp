@@ -1,12 +1,17 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import pergola1 from '/lovable-uploads/ebffc880-3b29-4833-a4e2-7789f51ad359.png';
-import pergola2 from '/lovable-uploads/1aa19414-eff8-44d9-a8a9-46140157e0cb.png';
-import pergola3 from '/lovable-uploads/eee61c12-e6e9-410c-b5e5-6ddb11789e50.png';
-import pergola4 from '/lovable-uploads/d59cdf9c-cdae-48d3-82b8-6c96ba90f380.png';
+import pergola1 from '/lovable-uploads/pergola-slider-1.jpg';
+import pergola2 from '/lovable-uploads/pergola-slider-2.jpg';
+import pergola3 from '/lovable-uploads/pergola-slider-3.jpg';
+import pergola4 from '/lovable-uploads/pergola-slider-4.jpg';
+import pergola5 from '/lovable-uploads/pergola-slider-5.jpg';
+import pergola6 from '/lovable-uploads/pergola-slider-6.jpg';
+import pergola7 from '/lovable-uploads/pergola-slider-7.jpg';
+import pergola8 from '/lovable-uploads/pergola-slider-8.jpg';
+import pergola9 from '/lovable-uploads/pergola-slider-9.jpg';
 const PergolasSlider = () => {
-  const images = [pergola1, pergola2, pergola3, pergola4];
+  const images = [pergola1, pergola2, pergola3, pergola4, pergola5, pergola6, pergola7, pergola8, pergola9];
   const [currentIndex, setCurrentIndex] = useState(0);
   const nextSlide = () => {
     setCurrentIndex(prev => (prev + 1) % images.length);
