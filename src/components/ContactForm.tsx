@@ -114,8 +114,8 @@ const ContactForm = () => {
         </h2>
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Image section */}
-          <div className="relative order-1 lg:order-1">
-            <div className="relative overflow-hidden rounded-lg shadow-lg aspect-[4/5]">
+          <div className="relative order-1 lg:order-1 h-full">
+            <div className="relative overflow-hidden rounded-lg shadow-lg h-full min-h-[400px]">
               <img
                 src="/lovable-uploads/contact-form-bg.jpg"
                 alt="Véranda moderne et lumineuse"
