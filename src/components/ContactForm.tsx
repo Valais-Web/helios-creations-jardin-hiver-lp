@@ -117,7 +117,7 @@ const ContactForm = () => {
           <div className="relative order-1 lg:order-1 h-full">
             <div className="relative overflow-hidden rounded-lg shadow-lg h-full min-h-[400px]">
               <img
-                src="/lovable-uploads/contact-form-bg.jpg"
+                src="/lovable-uploads/contact-form-new.jpg"
                 alt="Véranda moderne et lumineuse"
                 className="w-full h-full object-cover scale-110"
               />
